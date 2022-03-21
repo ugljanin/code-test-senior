@@ -45,3 +45,12 @@ should have at least 4 dummy articles in the result.
 ]
 `
 
+These should map to the title, image, introduction paragraph and the publish time between
+the clock and speech bubble icon
+
+# Notes:
+- Faded areas of the screenshot you can leave it as white space but the module is still
+expected to sit in its current position within the layout
+- Font family just get as color and size as close as you can
+- Image content doesn’t have to reflect the screenshot as long as their aspect ratio is close.
+- Spacing doesn’t have to be pixel perfect as long as its close

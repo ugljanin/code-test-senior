@@ -14,33 +14,36 @@ you can mock these JSON responses locally
 First api endpoint returns collection info like the following. For this test use the “landing”
 collectiontype
 
- 
-`[`
-    `{`
-        `collectiontype: “home”`
-        `collectionid:< use any unique key you wish>`
-    `},`
-    `{`
-        `collectiontype: “landing”`
-        `collectionid:< use any unique key you wish>`
+` 
+[
+    {
+        collectiontype: “home”
+        collectionid:< use any unique key you wish>
+    },
+    {
+        collectiontype: “landing”
+        collectionid:< use any unique key you wish>
     }
-    `……….. mock more entries if you wish`
-`]`
+    ……….. mock more entries if you wish
+]
+`
 
 Second API call passes through the collection id from the first api call
 Example: **localhost/api/collection/<collectionid>**
 and returns a collection of articles belonging to the corresponding collection id. Note you
 should have at least 4 dummy articles in the result.
     
-`[`
-    `{`
-        `Title: “live: Greg Inglis to announce nrl retirement….”`
-        `Imageurl: <local image url>`
-        `Intro: “Rabbitohs star Greg……”`
-        `Published: 2`
-    `},`
-    `………. mock more entries`
-`]`
+`
+[
+    {
+        Title: “live: Greg Inglis to announce nrl retirement….”
+        Imageurl: <local image url>
+        Intro: “Rabbitohs star Greg……”
+        Published: 2
+    },
+    ………. mock more entries
+]
+`
 
 These should map to the title, image, introduction paragraph and the publish time between
 the clock and speech bubble icon

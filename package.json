@@ -1,0 +1,47 @@
+{
+  "name": "code-test-senior",
+  "version": "1.0.0",
+  "description": "code test",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev:css": "gulp watch",
+    "build:css": "gulp css-build",
+    "build:js": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugljanin/code-test-senior.git"
+  },
+  "author": "Emir Ugljanin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ugljanin/code-test-senior/issues"
+  },
+  "homepage": "https://github.com/ugljanin/code-test-senior#readme",
+  "proxy": "http://localhost:3000",
+  "devDependencies": {
+    "@csstools/postcss-sass": "^4.0.0",
+    "cors": "^2.8.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-fetch": "^2.6.7",
+    "postcss": "^7.0.36",
+    "postcss-clean": "^1.2.2",
+    "postcss-color-function": "^4.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^3.0.4",
+    "pug": "^3.0.2",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

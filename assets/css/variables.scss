@@ -1,16 +1,20 @@
 :root {
-    --news-primary-text-color: black;
-    --news-secondary-text-color: #828080;
-    --news-primary-font: 'Roboto', sans-serif;
+	--news-primary-text-color: #000;
+	--news-secondary-text-color: #828080;
+	--news-danger-text-color: rgb(255 0 0);
+	--news-info-text-color: #3a83e9;
+	--news-light-color: #ccc;
+	--news-primary-font: 'Roboto', sans-serif;
 }
-// Small tablets and large smartphones (landscape view)
+
+/* Small tablets and large smartphones (landscape view) */
 $screen-sm-min: 576px;
 
-// Small tablets (portrait view)
+/* Small tablets (portrait view) */
 $screen-md-min: 768px;
 
-// Tablets and small desktops
+/* Tablets and small desktops */
 $screen-lg-min: 992px;
 
-// Large tablets and desktops
+/* Large tablets and desktops */
 $screen-xl-min: 1200px;

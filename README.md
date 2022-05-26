@@ -72,4 +72,6 @@ It will run server on http://localhost:3000 which will show news that are collec
 
 Both are not real services, but are loading files located in `json` directory.
 
+To check scss files for lint errors run `npm run lint:css`.
+
 For displaying the content I used pug templates which are stored in `views` folder.

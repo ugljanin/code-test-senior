@@ -1,5 +1,4 @@
 [
-    { "collectiontype": "home", "collectionid":"home-news" },
-    { "collectiontype": "landing", "collectionid":"landing-news" }
+  { "collectiontype": "home", "collectionid": "home-news" },
+  { "collectiontype": "landing", "collectionid": "landing-news" }
 ]
-

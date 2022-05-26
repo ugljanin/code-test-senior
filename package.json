@@ -8,6 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev:css": "gulp watch",
+    "lint:css": "stylelint --fix \"assets/css/**/*.scss\" --custom-syntax postcss-scss",
+    "lint:fix": "npm run lint:css -- --fix",
     "build:css": "gulp css-build",
     "build:js": "webpack"
   },
@@ -32,16 +34,23 @@
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-fetch": "^2.6.7",
-    "postcss": "^7.0.36",
+    "postcss": "^8.4.14",
     "postcss-clean": "^1.2.2",
     "postcss-color-function": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "postcss-scss": "^3.0.4",
-    "pug": "^3.0.2",
+    "postcss-scss": "^3.0.5",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.8.5",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.2.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "pug": "^3.0.2",
+    "stylelint-config-standard-scss": "^3.0.0"
   }
 }

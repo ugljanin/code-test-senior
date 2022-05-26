@@ -1,11 +1,8 @@
-body {
-	font-family: var(--news-primary-font);
-	font-size: 16px;
-}
-
 .news-module {
 	max-width: 768px;
 	padding: 1rem;
+    font-family: var(--news-primary-font);
+	font-size: 16px;
 	/* 576px window width and more */
 	@include sm {
 		display: grid;

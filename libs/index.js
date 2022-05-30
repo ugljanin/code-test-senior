@@ -16,6 +16,7 @@ export const getNews = async (search) => {
 
   const news = await fetch(collectionUrl, {
     method: "GET",
-  }).then((response) => response.json());
-  return news;
+  });
+  const newsJson = await news.json();
+  return newsJson;
 };

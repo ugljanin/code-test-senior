@@ -20,8 +20,18 @@ app.set("view engine", "pug");
 // ENDPOINTS
 app.get("/api/collections", getAllCollections);
 app.get("/api/collection/:id", getCollectionNews);
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   const search = "landing";
+
+  try {
+    const newsList = await getNews(search);
+    res.render("index", { pageTitle: "Code test", articles: newsList });
+  } catch(err) {
+    // catches errors both in fetch and response.json
+    console.log("rejected", err.message);
+  }
+
+  /* Using then
   const newsList = getNews(search)
     .then((data) => {
       res.render("index", { pageTitle: "Code test", articles: data });
@@ -29,6 +39,7 @@ app.get("/", (req, res) => {
     .catch((err) => {
       console.log("rejected", err.message);
     });
+    */
 });
 // START THE SERVER
 app.listen(port, host, () => {
